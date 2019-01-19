@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Black and White</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="framework/bootstrap.min.css">
+<script src="framework/jquery.min.js"></script>
+<script src="framework/bootstrap.min.js"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+</head>
+<body>
+<style>
+body {
+	background:#21ffbc;
+}
+.header_bg {
+	background: #ffffff;
+}
+.header {
+	padding: 2%;
+	box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+}
+content_about {
+	padding: 2%;
+	background: #ffffff
+	height: 5%;
+}
+nav {
+	float: top;
+	padding: 0px;
+	margin: 0;
+}
+nav ul {
+	text-align: center;
+	list-style-type: none;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0;
+}
+li {
+	float: left;
+	padding: 0px 5%;
+}
+li a {
+	float: left;
+	padding: 0px 5%;
+	color: black;
+	text-decoration: none;
+}
+li a:hover {
+	float: left;
+	padding: 0px 5%;
+	color: black;
+	text-decoration: none;
+}
+.circle_logo {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	height: 60px;
+	width: 60px;
+	background: #ffffff;
+	border-radius: 50%;
+	padding: 10px 5px;
+	box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+}
+.content_home {
+	padding: 10px 5px;
+	height: 700px;
+	box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+}
+.content_home_image {
+	padding 5px 0px;
+	float: right;
+	height: 100px;
+	width: 50%;
+}
+.content_home_text {
+	color: #000000;
+	font-family: tw cen mt;
+	padding 5px 0px;
+	float: left;
+	height: 100px;
+	width: 50%;
+	margin-left: 55px;
+}
+.content_about {
+	padding: 10px 5px;
+	height: 700px;
+	background: #f9b01d;
+	box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+}
+.content_about_image {
+	padding 5px 0px;
+	float: left;
+	height: 100px;
+	width: 50%;
+}
+.content_about_text {
+	color: #000000;
+	padding 5px 0px;
+	float: right;
+	height: 100px;
+	margin-right: 10px;
+	width: 50%;
+}
+.content_gallery {
+	padding: 10px 5px;
+	height: 700px;
+	background: #6bbee5;
+	box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+}
+.content_gallery_image {
+	padding 5px 0px;
+	height: 100px;
+}
+.content_gallery_text {
+	color: #000000;
+	padding 5px 0px;
+	height: 100px;
+}
+.content_order {
+	padding: 10px 5px;
+	height: 700px;
+	background: #df82ff;
+	box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+}
+form {
+	font-family:Tw Cen MT;
+	border: 3px solid #f1f1f1;
+	background-color: #6b8cb2;
+	padding: 10px 10px;
+	width: 70%;
+	height: 80%;
+	position: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	opacity: 1;
+	box-shadow: 4px 4px 12px #2d2e30;
+}
+input[type=text],input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+button {
+	background-color: #8cbaf2;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+button:hover {
+	opacity: 0.8;
+}
+.content_guest_book {
+	padding: 10px 5px;
+	height: 700px;
+	background: #ff2323;
+	box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
+}
+</style>
+<div class="header_bg">
+	<div class="header">
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#order">ORDER</a></li>
+					<li><a href="#gallery">GALLERY</a></li>
+					<li><a href="#guest">GUEST BOOK</a></li>
+				</ul>
+			</nav>
+		</section>
+		<div class="circle_logo">
+			<a href="#"><img src="favicon.png" style="position: center;margin:auto;height: 100%; width:100%;"></a>
+		</div>
+	</div>
+</div>
+<div class="content_home" id="home">
+	<div class="content_home_image">
+		<img src="content_home.png" >
+	</div>
+	<div class="content_home_text">
+		<h1 style="color:#ffffff;font-size:70px;text-decoration:underline;">BLACK AND WHITE</h1>
+		<h1 style="margin-left:20px;color:#000000;font-size:70px;">A DESIGN SERVICE</h1>
+		<h1 style="color:#ff00f0;font-size:70px;">WITH CHEAP PRICES!</h1>
+	</div>
+</div>
+<div class="content_about" id="about">
+	<div class="content_about_image">
+		<img src="bwlogo.png">
+	</div>
+	<div class="content_about_text">
+		<h1> ABOUT</h1>
+		<p style="color: #ffffff;font-size:22px;">Black and White merupakan website yang menjual jasa desain komputer dengan sistem order.
+		Desain komputer yang dibuat menggunakan aplikasi Photoshop, dan hasil yang akan diterima pemesan berupa .psd, .png, .jpg. Pengerjaan dilakukan paling lambat 7x24.</p>
+	</div>
+</div>
+<div class="content_gallery" id="gallery">
+	<div class="content_gallery_text">
+		<h1 style="text-align:center;text-decoration:underline;"> GALLERY</h1>
+	</div>
+	<div class="content_gallery_image">
+		<img src="headbg.png" style="margin-left:20px;margin-right:auto;">
+	</div>
+</div>
+<div class="content_order" id="order">
+	<h1 style="text-align:center;color:#000000;">ORDER HERE</h1>
+	<h2 style="text-align:center;color:#ffffff;">Your order will be reviewed first before payment</h2>
+	<fieldset>
+		<form action="mailto:tiperty001@gmail.com" method="POST" enctype="text/plain">
+			<label for="uname"><b style="color:white;">Name</b></label>
+			<input type="text" placeholder="enter name" name="uname" required>
+			<label for="product"><b style="color:white;">Product Available</b></label><br>
+			<select style="width:300px;height:50px;" multiple name="Produk[]">
+				<option style="text-align:center;font-size:16px" value="1">Poster</option>
+				<option style="text-align:center;font-size:16px" value="2">Logo</option>
+				<option style="text-align:center;font-size:16px" value="3">Banner<option>
+				</select><br>
+			<label for="email"><b style="color:white;">Email</b></label>
+			<input type="text" placeholder="enter email" name="email" required>
+			<label for="desc"><b style="color:white;">Detail of Design</b></label>
+			<input type="text" name="desc" placeholder="give us more info about the design you want"size="200"><br><br>
+			<button type="submit" value="Send">Order</button>
+		</form>
+	</fieldset>
+</div>
+<div class="content_guest_book" id="guest">
+		<h1 style="text-align:center;color:#ffffff;">SEND US YOUR REVIEW!</h1>
+		<fieldset>
+		<form action="mailto:tiperty001@gmail.com" method="POST" enctype="text/plain">
+			<label for="name"><b style="color:white;">Name</b></label>
+			<input type="text" placeholder="enter name" name="name" required>
+			<label for="mail"><b style="color:white;">Email</b></label>
+			<input type="text" placeholder="enter email" name="mail" required>
+			<label for="review"><b style="color:white;">Review our products</b></label>
+			<input type="text" name="review" placeholder="give us review"size="200"><br><br>
+			<button type="submit" value="Send">Send Review</button>
+		</form>
+	</fieldset>
+</div>
+</body>
+</html>
